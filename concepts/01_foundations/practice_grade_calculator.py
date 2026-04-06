@@ -11,3 +11,18 @@
 #
 # Bonus: First check if the score is valid (between 0 and 100)
 #        before calculating the grade.
+
+score = 100
+
+# check if score is between 0 and 100 first
+if (0 <= score <= 100):
+    if (score >= 90):
+        print('A')
+    elif (score >= 80):
+        print('B')
+    elif (score >= 70):
+        print('C')
+    else:
+        print('F')
+else:
+    print('Score is out of range')
