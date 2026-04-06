@@ -8,3 +8,9 @@
 #
 # 2. Bonus: do it again using manual string concatenation
 #    (convert age to str manually, no f-strings)
+
+name, age, city, hobby = "Alice", 25, "Vancouver", "climbing"
+
+print(f"Name: {name} | Age: {age} | City: {city} | Hobby: {hobby}")
+
+print("Name: " + name + " | Age: " + str(age) + " | City: " + city + " | Hobby: " + hobby)

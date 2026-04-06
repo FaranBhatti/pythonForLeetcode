@@ -1,4 +1,4 @@
-# 01 — Foundations: Variables, Types, and Math
+# 01 — Foundations: Variables, Types, Math, and Conditionals
 
 ## 1. Variables and Data Types
 
@@ -78,6 +78,49 @@ max(3, 1, 2)     # 3
 
 ---
 
+## 3. Conditionals (If-Statements)
+
+Conditionals execute different blocks of logic based on whether a condition is `True` or `False`.
+
+### Basic Syntax
+```python
+if x > 10:
+    print("big")
+elif x > 5:
+    print("medium")
+else:
+    print("small")
+```
+
+### Logical Operators
+
+Python uses plain English instead of symbols:
+
+| Python | Other languages |
+|--------|----------------|
+| `and` | `&&` |
+| `or` | `\|\|` |
+| `not` | `!` |
+
+### Ternary Operator (Inline If)
+```python
+label = "big" if x > 10 else "small"
+```
+
+### Membership Checks
+```python
+if "apple" in fruits:
+    print("found it")
+```
+
+### Gotchas for LeetCode
+
+- **Indentation is syntax** — Python uses indentation instead of `{}` to define blocks. Inconsistent spacing will break your code.
+- **`elif` not `if`** — use `elif` for multiple conditions. Using separate `if` statements means multiple blocks can execute; `elif` stops after the first match.
+
+---
+
 ## Practice
 
 - [practice_profile_card.py](practice_profile_card.py)
+- [practice_grade_calculator.py](practice_grade_calculator.py)
